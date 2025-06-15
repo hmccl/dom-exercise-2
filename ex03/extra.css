@@ -1,0 +1,8 @@
+.hidden {
+  display: none;
+}
+
+#error {
+  font-size: 2rem;
+  font-weight: bold;
+}
