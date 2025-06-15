@@ -1,5 +1,9 @@
 document.getElementById('errButton').addEventListener('click', () => {
-  let errorMessage = document.getElementById('errMessage');
+  let messageInput = document.getElementById('messageInput').value;
+  let idInput = document.getElementById('idInput').value;
+
+  let errorMessage = document.getElementById(idInput);
+  errorMessage.innerText = messageInput;
   errorMessage.classList.remove('hidden');
 
   setTimeout(() => {

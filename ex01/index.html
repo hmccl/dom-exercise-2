@@ -23,12 +23,23 @@
       <section>
         <h3>Questão 1</h3>
           <fieldset>
-            <legend>Botão</legend>
+            <legend>Criar Mensagem de Erro</legend>
+            <p>Digite a mensagem de erro desejada.</p>
             <p>
-              <button id="errButton" type="button">Botão</button>
+              <label for="messageInput">Mensagem de erro</label>
+              <input id="messageInput" type="text" placeholder="Mensagem de erro">
+            </p>
+            <p>Digite o ID desejado (errMessage ou errMessageAlt).</p>
+            <p>
+              <label for="idInput">ID de destino</label>
+              <input id="idInput" type="text" placeholder="ID de destino">
+            </p>
+            <p>
+              <button id="errButton" type="button">Criar</button>
             </p>
           </fieldset>
           <p id="errMessage" class="hidden">Erro!</p>
+          <p id="errMessageAlt" class="hidden">Erro!</p>
       </section>
     </article>
   </main>

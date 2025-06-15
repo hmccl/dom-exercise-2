@@ -6,3 +6,8 @@
   font-size: 2rem;
   font-weight: bold;
 }
+
+#errMessageAlt {
+  font-size: 2rem;
+  font-style: oblique;
+}
