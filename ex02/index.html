@@ -8,7 +8,9 @@
   <meta name="author" content="Grupo">
   <meta name="description" content="Exercício do Grupo">
   <link rel="stylesheet" href="../style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="extra.css" type="text/css" media="all">
   <link rel="icon" href="../favicon.svg" type="image/svg">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -19,7 +21,20 @@
   <main>
     <article>
       <section>
-        <h3>Questão 1</h3>
+        <h3>Questão 2</h3>
+          <fieldset>
+            <legend>Criar Mensagem</legend>
+            <p>Digite a mensagem desejada.</p>
+            <p>
+              <label for="messageInput">Mensagem</label>
+              <input id="messageInput" type="text" placeholder="Mensagem">
+            </p>
+            <p>
+              <button id="msgButton" type="button">Criar</button>
+            </p>
+          </fieldset>
+          <p id="message" class="hidden">Mensagem!</p>
+          <p id="error" class="hidden">Erro!</p>
       </section>
     </article>
   </main>
