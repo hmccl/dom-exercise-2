@@ -1,10 +1,10 @@
 function displayErrorMessage(text) {
   let errorMessage = document.getElementById('error');
   errorMessage.innerText = text;
-  errorMessage.classList.remove('hidden');
+  errorMessage.hidden = false;
 
   setTimeout(() => {
-    errorMessage.classList.add('hidden');
+    errorMessage.hidden = true;
   }, 3000);
 }
 
@@ -15,7 +15,7 @@ function displayMessage() {
     if (messageInput) {
       let message = document.getElementById('message');
       message.innerText = messageInput;
-      message.classList.remove('hidden');
+      message.hidden = false;
     } else {
       displayErrorMessage('Mensagem vazia!');
     }
