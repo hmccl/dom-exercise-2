@@ -5,10 +5,12 @@ function createErrorMessage() {
   
     let errorMessage = document.getElementById(idInput);
     errorMessage.innerText = messageInput;
-    errorMessage.classList.remove('hidden');
+    // sem utilizar display: none
+    // https://html.spec.whatwg.org/multipage/interaction.html#the-hidden-attribute
+    errorMessage.hidden = false;
   
     setTimeout(() => {
-      errorMessage.classList.add('hidden');
+      errorMessage.hidden = true;
     }, 3000);
   });
 }
