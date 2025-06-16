@@ -5,10 +5,10 @@ function rate(likes, comments, shares, views) {
 function displayErrorMessage(text) {
   let errorMessage = document.getElementById('error');
   errorMessage.innerText = text;
-  errorMessage.classList.remove('hidden');
+  errorMessage.hidden = false;
 
   setTimeout(() => {
-    errorMessage.classList.add('hidden');
+    errorMessage.hidden = true;
   }, 3000);
 }
 
@@ -24,7 +24,7 @@ function displayMessage() {
     if (likes && comments && shares && views && views !== 0) {
       let message = document.getElementById('result');
       message.innerText = 'Taxa de Engajamento: ' + rate(likes, comments, shares, views);
-      message.classList.remove('hidden');
+      message.hidden = false;
     } else {
       displayErrorMessage('Dados não numéricos!');
     }
