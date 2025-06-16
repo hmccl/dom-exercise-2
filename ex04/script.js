@@ -3,7 +3,8 @@ function displayImage() {
     let selectedImage = document.getElementById('imageInput').files[0];
     if (selectedImage) {
       let figure = document.getElementById('result'); 
-  
+      figure.innerHTML = '';
+
       let img = document.createElement('img');
       img.src = URL.createObjectURL(selectedImage);
       img.alt = 'Imagem carregada pelo usuário';
