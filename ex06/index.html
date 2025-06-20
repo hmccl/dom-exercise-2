@@ -8,7 +8,9 @@
   <meta name="author" content="Grupo">
   <meta name="description" content="Exercício do Grupo">
   <link rel="stylesheet" href="../style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="extra.css" type="text/css" media="all">
   <link rel="icon" href="../favicon.svg" type="image/svg">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -19,7 +21,22 @@
   <main>
     <article>
       <section>
-        <h3>Questão 1</h3>
+        <h3>Questão 6</h3>
+          <fieldset id="socials">
+            <legend>Redes Sociais</legend>
+            <ul>
+              <li><label for="Facebook"><input id="Facebook" name="checkboxSocials" type="checkbox" checked="checked"> Facebook</label></li>
+              <li><label for="Twitter"><input id="Twitter" name="checkboxSocials" type="checkbox"> Twitter</label></li>
+              <li><label for="Instagram"><input id="Instagram" name="checkboxSocials" type="checkbox"> Instagram</label></li>
+              <li><label for="LinkedIn"><input id="LinkedIn" name="checkboxSocials" type="checkbox"> LinkedIn</label></li>
+              <li><label for="TikTok"><input id="TikTok" name="checkboxSocials" type="checkbox"> TikTok</label></li>
+            </ul>
+            <p>
+              <button id="resButton" type="button">Enviar</button>
+            </p>
+          </fieldset>
+          <p id="result" hidden>Resultado!</p>
+          <p id="error" hidden>Erro!</p>
       </section>
     </article>
   </main>
