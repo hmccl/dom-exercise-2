@@ -8,6 +8,10 @@ function displayErrorMessage(text) {
   }, 3000);
 }
 
+function cleanById(id) {
+  document.getElementById(id).innerHTML = '';
+}
+
 function displayCheckbox() {
   document.getElementById('resButton').addEventListener('click', () => {
     let checkboxSocials = document.getElementsByName('checkboxSocials');
@@ -24,6 +28,7 @@ function displayCheckbox() {
       result.innerText = checkedSocials.join(' - ');
       result.hidden = false;
     } else {
+      cleanById('result');
       displayErrorMessage('Seleção vazia!');
     }
   });

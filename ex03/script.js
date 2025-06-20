@@ -12,6 +12,10 @@ function displayErrorMessage(text) {
   }, 3000);
 }
 
+function cleanById(id) {
+  document.getElementById(id).innerHTML = '';
+}
+
 function displayMessage() {
   document.getElementById('resButton').addEventListener('click', () => {
     let likes = Number(document.getElementById('likes').value);
@@ -26,6 +30,7 @@ function displayMessage() {
       message.innerText = 'Taxa de Engajamento: ' + rate(likes, comments, shares, views);
       message.hidden = false;
     } else {
+      cleanById('result');
       displayErrorMessage('Dados não numéricos!');
     }
   });

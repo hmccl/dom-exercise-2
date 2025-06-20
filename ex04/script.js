@@ -2,7 +2,7 @@ function displayImage() {
   document.getElementById('imgButton').addEventListener('click', () => {
     let selectedImage = document.getElementById('imageInput').files[0];
     if (selectedImage) {
-      let figure = document.getElementById('result'); 
+      let figure = document.getElementById('result');
       figure.innerHTML = '';
 
       let img = document.createElement('img');
