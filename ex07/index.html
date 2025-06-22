@@ -8,7 +8,9 @@
   <meta name="author" content="Grupo">
   <meta name="description" content="Exercício do Grupo">
   <link rel="stylesheet" href="../style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="extra.css" type="text/css" media="all">
   <link rel="icon" href="../favicon.svg" type="image/svg">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -19,7 +21,31 @@
   <main>
     <article>
       <section>
-        <h3>Questão 1</h3>
+        <h3>Questão 7, 8 e 9</h3>
+          <fieldset>
+            <legend>Adicionar e Remover Hashtag</legend>
+            <p>Digite a hashtag que deseja adicionar.</p>
+            <p>
+              <label for="hashtagInput">Adicionar</label>
+              <input id="hashtagInput" type="text" placeholder="Hashtag">
+            </p>
+            <p>
+              <button id="addTagButton" type="button">Adicionar</button>
+            </p>
+            <p>Selecione a hashtag que deseja remover.</p>
+            <p>
+              <label for="hashtagSelect">Remover</label>
+              <!-- Size 6 porque o label ocupa 1 espaço -->
+              <select id="hashtagSelect" size="6" multiple>
+                <optgroup id="hashtagOpt" label="Hashtags">
+                </optgroup>
+              </select>
+            </p>
+            <p>
+              <button id="remTagButton" type="button">Remover</button>
+            </p>
+          </fieldset>
+          <p id="error" hidden>Erro!</p>
       </section>
     </article>
   </main>
