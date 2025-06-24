@@ -121,7 +121,7 @@ label {
   padding: 0.2rem;
 }
 
-input {
+input, select {
   border: 0.005rem solid var(--blue);
   border-radius: 0.2rem;
   padding: 0.2rem;
