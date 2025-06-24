@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exercício de DOM</title>
-  <meta name="author" content="Grupo">
-  <meta name="description" content="Exercício do Grupo">
-  <link rel="stylesheet" href="../style.css" type="text/css" media="all">
-  <link rel="icon" href="../favicon.svg" type="image/svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mover Ativos Financeiros</title>
+    <link rel="stylesheet" href="extra.css">
+    <script src="script.js"></script>
 </head>
-
 <body>
-  <header>
-    <h1>Exercício de DOM</h1>
-  </header>
-
-  <main>
-    <article>
-      <section>
-        <h3>Questão 1</h3>
-      </section>
-    </article>
-  </main>
-
-  <footer>
-    <p><a href="../index.html">Voltar</a></p>
-  </footer>
+    <h1>Mover Ativos Financeiros entre Carteiras</h1>
+    <div class="container">
+        <div class="carteira-wrapper">
+            <label for="ativosDisponiveis">Ativos Disponíveis:</label>
+            <select id="ativosDisponiveis" size="10" multiple>
+                <option value="AAPL">Apple (AAPL)</option>
+                <option value="GOOGL">Google (GOOGL)</option>
+                <option value="AMZN">Amazon (AMZN)</option>
+                <option value="MSFT">Microsoft (MSFT)</option>
+                <option value="TSLA">Tesla (TSLA)</option>
+                <option value="BRK.B">Berkshire Hathaway (BRK.B)</option>
+                <option value="FB">Meta (FB)</option>
+                <option value="V">Visa (V)</option>
+                <option value="JNJ">Johnson & Johnson (JNJ)</option>
+                <option value="WMT">Walmart (WMT)</option>
+            </select>
+        </div>
+        <div class="buttons">
+            <button id="moverParaDireitaBtn" title="Mover selecionados para a Carteira de Investimentos" disabled>></button>
+            <button id="moverParaEsquerdaBtn" title="Mover selecionados para Ativos Disponíveis" disabled><</button>
+        </div>
+        <div class="carteira-wrapper">
+            <label for="carteiraInvestimentos">Carteira de Investimentos:</label>
+            <select id="carteiraInvestimentos" size="10" multiple></select>
+        </div>
+    </div>
 </body>
-
 </html>

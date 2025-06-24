@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+.container {
+    display: flex; /* Mantém os itens lado a lado */
+    gap: 20px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.carteira-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+select {
+    width: 250px;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1em;
+    background-color: #fcfcfc;
+    /* Adicionado para Firefox */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza os botões verticalmente */
+    gap: 15px;
+}
+.buttons button {
+    padding: 10px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.2s ease, opacity 0.2s ease; /* Transição para opacidade também */
+}
+.buttons button:hover {
+    background-color: #0056b3;
+}
+.buttons button:active {
+    background-color: #004085;
+}
+/* Estilo para botões desabilitados */
+.buttons button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.6; /* Torna o botão mais transparente quando desabilitado */
+}
